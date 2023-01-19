@@ -1,0 +1,56 @@
+{{!-- /*
+Student Name: Alfej Savaya
+Student Email: aasavaya@myseneca.ca
+Student ID: 118823210
+Class: WEB322 NOO
+Date: October 13, 2022
+*/ --}}
+<!doctype html>
+<html>
+    <head>
+        <title>View Data</title>
+        <style>
+            body {
+                background-color: rgb(53, 70, 70);
+            }
+            .data {
+                color: greenyellow;
+            }
+            table {
+                border: white;
+            }
+            .name {
+                color: aqua;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="name">
+            <table>
+                <tr><td>Student Name: Alfej Savaya</td></tr>
+                <tr><td>Student Email: aasavaya@myseneca.ca</td></tr>
+                <tr><td>Student Number: 118823210</td></tr>
+                <tr><td>Date: October 13, 2022</td></tr>
+                <tr><td>The entire Lab is done by myself, with the help of the Notes provided by the Professor</td></tr>
+            </table>
+        </div>
+        <br>
+        <div class="data">
+            <table border='1'>
+                {{#each data}}
+                <tr>
+                    <td>{{id}}</td>
+                    <td>{{name}}</td>
+                    <td>{{min_size}}</td>
+                </tr>
+            {{else}}
+                    <tr>
+                    <td colspan="4">No Data Available</td>
+                </tr>
+            {{/each}}
+            </table>
+        </div>
+    </body>
+</html>

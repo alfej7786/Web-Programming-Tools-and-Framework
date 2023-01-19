@@ -1,0 +1,39 @@
+<!-- /*
+Student Name: Alfej Savaya
+Student ID: 118823210
+Stdent Email: aasavaya@myseneca.ca
+class: WEB322NOO
+*/ -->
+<!doctype html>
+<html>
+
+<head>
+    <style>
+        input {
+            margin: 4px;
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Week 5 example</h1>
+    <p>Register a new user:</p>
+    <div style="text-align:right;width:400px;border:1px dashed #6495de;padding:16px;">
+        <form action="/register-user" method="POST" enctype="multipart/form-data">
+            <label for="name">Name</label>
+            <input id="name" type="text" name="name" /><br />
+            <label for="username">Username</label>
+            <input id="username" type="text" name="username" /><br />
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" /><br />
+            <label for="password">Password</label>
+            <input id="password" type="password" name="password" /><br />
+            <label for="photo">Photo ID</label>
+            <input id="photo" type="file" name="photo" /><br />
+            <input type="submit" value="Submit File" />
+        </form>
+    </div>
+</body>
+
+</html>
